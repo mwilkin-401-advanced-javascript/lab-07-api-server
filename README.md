@@ -8,7 +8,7 @@ Scaffold for lab projects for 401
 ### Author: Matt Wilkin and Felipe Delatorre
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-07-api-server/pull/1)
 
 [travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
 
