@@ -3,7 +3,12 @@
 
 module.exports = exports = {};
 
+/**@module utils */
 
+/**
+ * @param {array}
+ * @return {object} 
+ */
 exports.get = (db) => {
   let count = db.length;
   let results = db;
@@ -11,6 +16,11 @@ exports.get = (db) => {
   return {count, results};
 };
 
+/**
+ * @param {obj}
+ * @param {array}
+ * @return {object} 
+ */
 exports.getById = (req, db) => {
   let id = req.params.id;
   let record = db.filter((record) => record.id === parseInt(id));
