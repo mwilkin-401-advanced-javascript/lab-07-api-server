@@ -17,8 +17,8 @@ exports.get = (db) => {
 };
 
 /**
- * @param {obj}
- * @param {array}
+ * @param {obj} req - request params from url
+ * @param {array} db - in memory database
  * @return {object} 
  */
 exports.getById = (req, db) => {
@@ -26,6 +26,12 @@ exports.getById = (req, db) => {
   let record = db.filter((record) => record.id === parseInt(id));
   return record[0];
 };
+
+/**
+ * @param {obj} req - request params from url
+ * @param {array} db - in memory database
+ * @return {object} 
+ */
 
 exports.post = (req, db) => {
   let {name} = req.body;
@@ -35,6 +41,11 @@ exports.post = (req, db) => {
   return record;
 };
 
+/**
+ * @param {obj} req - request params from url
+ * @param {array} db - in memory database
+ * @return {object} 
+ */
 exports.put = (req, db) => {
   let id = req.params.id;
   let {name} = req.body;
@@ -47,7 +58,11 @@ exports.put = (req, db) => {
   });
   return record;
 };
-
+/**
+ * @param {obj} req - request params from url
+ * @param {array} db - in memory database
+ * @return {object} 
+ */
 exports.delete = (req, db) => {
   let id = req.params.id;
   let count = 0;
